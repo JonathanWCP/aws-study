@@ -5,4 +5,3 @@ include(
     ":aws-study-domain",
     ":aws-study-infrastructure"
 )
-

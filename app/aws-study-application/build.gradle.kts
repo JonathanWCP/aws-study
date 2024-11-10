@@ -1,11 +1,14 @@
 plugins {
-    kotlin("jvm") version "2.0.20"
+    kotlin("plugin.spring") version "2.0.21"
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    implementation("org.springframework.boot:spring-boot-starter")
+    //implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation(kotlin("stdlib"))
+    implementation(kotlin("reflect"))
 }
 
-tasks.test {
-    useJUnitPlatform()
+tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+    mainClass.set("com.library.Main")
 }
