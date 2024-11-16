@@ -1,7 +1,7 @@
 rootProject.name = "aws-study-app"
 
 include(
-    ":aws-study-application",
-    ":aws-study-domain",
-    ":aws-study-infrastructure"
+    "aws-study-application",
+    "aws-study-domain",
+    "aws-study-infrastructure"
 )
